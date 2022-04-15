@@ -1,1 +1,2 @@
+# 1. Get the list of network interfaces of the machine without displaying any detail for these interfaces.
 ifconfig -l
