@@ -1,0 +1,4 @@
+# 8. Find the provider of who.int
+# dig who.int +short to get the IP -> whois (IP) -> Orgname:
+# whois $(dig who.int +short) | grep "OrgName" | tr -s " " | cut -d " " -f 2-
+Cloudflare, Inc. 

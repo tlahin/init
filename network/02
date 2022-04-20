@@ -1,12 +1,17 @@
 # 2. Identify and display the ethernet interface of characteristics:
 
 # a. Broadcast address
-# greps exact match 'broadcast' from en0 and dispays the address after it
-ifconfig -L en0| grep -o "broadcast.*"
 # greps line with 'broadcast' from en0 interface and displays the 6th field from the line
+
 ifconfig -L en0 | grep "broadcast" | cut -d " " -f 6
+
+# alternative command
+# ifconfig -L en0 | grep -o "broadcast.*"
 
 # b. All IP adresses which are part of the same subnet
 # gets information using Address resolution protocol and displays the 2nd field which is the ip in this case
-arp -a | awk '{ print $2 }' 
+
 arp -a | cut -d " " -f 2
+
+# alternative command
+# arp -a | awk '{ print $2 }'

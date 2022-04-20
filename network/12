@@ -1,0 +1,2 @@
+# Find the IP that was assgned to you by dhcp server
+ipconfig getifaddr en0

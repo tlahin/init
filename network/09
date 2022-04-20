@@ -1,0 +1,3 @@
+# 9. Find the external IP of 42.fr
+# dig 42.fr +short
+163.172.250.16

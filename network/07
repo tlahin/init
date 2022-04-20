@@ -1,0 +1,2 @@
+# 7. Query an external DNS server on the who.int domain name
+nslookup who.int 8.8.8.8

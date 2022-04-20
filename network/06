@@ -1,0 +1,3 @@
+# 6. Get the complete path of the file that contains the IP adress of the DNS server you're using
+# resolv.conf file resides on every DNS client and has the information needed
+/etc/resolv.conf
