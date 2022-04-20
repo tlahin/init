@@ -1,4 +1,4 @@
-# Use the output of the previous command to find the name and IP adress of the device that makes the link between you (local network) and the outside world
+# 11. Use the output of the previous command to find the name and IP adress of the device that makes the link between you (local network) and the outside world
 # traceroute who.int | grep "nat"
 # Network address translation, translates the private IP to public IP thats readable on the internet
 2 nat (10.60.1.1)

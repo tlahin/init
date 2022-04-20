@@ -1,2 +1,2 @@
-# Find the IP that was assgned to you by dhcp server
+# 12. Find the IP that was assgned to you by dhcp server
 ipconfig getifaddr en0
