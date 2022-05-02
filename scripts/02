@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# 2. Write a script that deletes an active user on the VM
+
+main()
+{
+	clear
+	printf "Here is a list of all active users on the VM:\n"
+	users
+	echo
+	printf "Which one would you like to delete?\n"
+	read name
+	for s in $(users)
+	do
+		if [ "$name" == "$s" ]
+		then
+			flag=1
+			break
+		fi
+	done
+	if [ "$flag" = "1" ]
+	then
+		delete_user $name
+	else
+		printf "Sorry, user $name was not found.\n"
+		printf "Would you like to try again? (y/n)\n"
+		read reply
+		if [ "$reply" == "y" ]
+		then
+			main
+		fi
+		exit 1
+	fi
+}
+
+delete_user()
+{
+	printf "Deleting user $name..\n\n"
+	sudo killall -u $1
+	sudo userdel -rf $1
+	printf "User $name has been deleted.\n"
+	printf "Would you like to delete another user? (y/n)\n"
+	read reply
+	if [ "$reply" == "y" ]
+	then
+		main
+	fi
+}
+
+main

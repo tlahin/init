@@ -1,0 +1,11 @@
+# 23. Explain how to connect yourself as the new user (both graphically and with ssh)
+# Using GUI
+>top right to poweroff/logout
+>select the user you want to login as
+>login
+
+# In VMs terminal using command:
+su <USERNAME>
+
+# Using ssh:
+ssh username@<ipaddress> -p <port>

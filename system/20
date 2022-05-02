@@ -1,0 +1,2 @@
+# 20. List all the existing users on the VM
+compgen -u

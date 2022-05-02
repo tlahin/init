@@ -1,0 +1,3 @@
+#!/bin/bash
+# 1. Write a script which displays only the login, UID, and path of each entry of the /etc/passwd file.
+cut -d ':' -f 1,3,7 /etc/passwd

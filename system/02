@@ -1,0 +1,4 @@
+# 2. What commmand can you use to rename your system?
+# You can use command 'hostnamectl' to see information about the system such as the name
+# but to rename it use command <NAME> as the name you want it to be
+sudo hostnamectl set-hostname <NAME>

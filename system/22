@@ -1,0 +1,2 @@
+# 22. Find the command that adds a new local user
+sudo adduser <NAME>

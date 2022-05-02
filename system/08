@@ -1,0 +1,2 @@
+# 8. What file contains the RSA keys of the systens that are authorized to connect via SSH?
+~/.ssh/authorized_keys

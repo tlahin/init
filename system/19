@@ -1,0 +1,2 @@
+# 19. List all services which are start at boot time and name the kind of service
+sudo system list-unit-files --type=service --state=enabled

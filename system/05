@@ -1,0 +1,3 @@
+# 5. Name the command that determines the state of the SSH service
+# Need to have installed openssh-server
+sudo service ssh status
