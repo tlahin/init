@@ -18,7 +18,7 @@ main()
 			break
 		fi
 	done
-	if [ "$flag" = "1" ]
+	if [ "$flag" == "1" ]
 	then
 		delete_user $name
 	else
