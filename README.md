@@ -1,4 +1,3 @@
 # Init
 
-1. write
-2. redo script 03
+1. write a proper README
