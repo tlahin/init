@@ -1,2 +1,5 @@
 # 4. Identify the default gateway in the routing table
+ipconfig getoption en0 router
+
+# alternatively
 netstat -rn | grep -m 1 "default" | cut -d " " -f 13 
